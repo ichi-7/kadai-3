@@ -11,7 +11,7 @@
 </table>
 <%= link_to "edit", edit_user_path(current_user.id) %>
 <h2>New book</h2>
-  <%= form_with model: @book do |f| %>
+  <%= form_with model: @book_new do |f| %>
     <div class="form-group">
       <label>Title</label> <br>
         <%= f.text_field :title %>

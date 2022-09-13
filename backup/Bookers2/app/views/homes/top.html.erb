@@ -4,8 +4,8 @@
 <p>about various books!</p>
 
 <% if user_signed_in? %>
-  <%= link_to "Log in", user_path(@user_id) %><br>
-  <%= link_to "Sign up", user_path(@user_id) %>
+  <%= link_to "Log in", user_path(current_user.id) %><br>
+  <%= link_to "Sign up", user_path(current_user.id) %>
 <% else %>
   <%= link_to "Log in", new_user_session_path %><br>
   <%= link_to "Sign up", new_user_registration_path %>

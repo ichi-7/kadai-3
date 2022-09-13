@@ -13,11 +13,12 @@ class BooksController < ApplicationController
 
   def index
     @books = Book.all
-    @book = Book.new
+    @book_new = Book.new
   end
 
   def show
     @book = Book.find(params[:id])
+    @book_new = Book.new
   end
   
   def destroy
