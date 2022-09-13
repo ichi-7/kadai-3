@@ -2,7 +2,7 @@
 <table>
   <tr>
     <td>
-      <%= image_tag 'no_image.jpg' %><br>
+      <%= image_tag @book.user.get_profile_image(100,100) %><br>
       <%= link_to @book.user.name, user_path(@book.user_id) %>
     </td>
     <td><%= link_to @book.title, book_path(@book) %></td>
